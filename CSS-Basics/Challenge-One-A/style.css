@@ -1,0 +1,35 @@
+body {
+    background-color: #e2ac7f;
+}
+
+div#wrap {
+    background-color: #f5f5dc;
+    text-align: center;
+    border-style: dashed;
+    width: 80%;
+    margin: auto;
+    border-width: 4px;
+}
+
+h1 {
+    border-style: none none dashed none;
+    border-width: 4px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0px;
+}
+
+li {
+    list-style-type: none;
+    font-style: italic;
+}
+
+li::first-letter {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+div#wrap p {
+    font-size: .8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
