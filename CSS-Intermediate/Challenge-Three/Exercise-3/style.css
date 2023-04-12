@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    border: 3px solid black;
+    height: 20vh;
+}
+
+.one {
+    background-color: #ff9900;
+}
+
+.two {
+    background-color: #cf2a27;
+}
+
+.three {
+    background-color: #6fa8dc;
+}
+
+.huge-column {
+    background-color: #009e0f;
+    height: 20vh;
+}
+
+.image {
+    background-image: url(pexels-avery-nielsenwebb-2406449.jpg);
+    background-size: cover;
+    border: none;
+}
