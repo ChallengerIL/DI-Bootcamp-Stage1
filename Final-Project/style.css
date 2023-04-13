@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(image-header.png) no-repeat 100% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    margin: 3em auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: black;
+    opacity: .7;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    margin-bottom: .5em;
+}
+
+#header-quote {
+    color: rgb(200, 200, 200);
+    font-style: italic;
+}
+
+#header-text {
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+}
+
+#biography {
+    margin: 3em;
+}
+
+#bio-image {
+    float: left;
+    height: 300px;
+    margin: 0 20px 20px 0;
+    border-radius: 15px;
+}
+
+#top-movies {
+    height: 100%;
+    /* background-color: #0f0f11; */
+    padding-bottom: 30px;
+}
+
+#top-movies h2 {
+    /* color: white; */
+    padding-top: 30px;
+}
+
+#timeline h2 {
+    color: white;
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#timeline {
+    color: white;
+    background: url(image-timeline.jpg) no-repeat center fixed;
+    background-size: cover;  
+}
+
+#timeline-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+}
+
+#timeline-grid {
+    margin: 3em auto;
+    max-width: 34.15em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px 20px;
+}
+
+.grid-item p {
+    color: #e5e5e5;
+}

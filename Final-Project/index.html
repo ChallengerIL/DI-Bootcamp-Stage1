@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Robert De Niro</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#header" class="link">Top</a></li>
+                <li><a href="#biography" class="link">Biography</a></li>
+                <li><a href="#timeline" class="link">Timeline</a></li>
+                <li><a href="#top-movies" class="link">Top Movies</a></li>
+            </ul>
+        </nav>
+        <section id="header-text">
+            <h1>Robert De Niro</h1>
+            <p id="header-quote">"Time goes on. So whatever you're going to do, do it.<br> Do it now. Don't wait."</p>
+        </section>
+    </header>
+    <main>
+        <section id="biography">
+            <h2>Biography</h2>
+            <img id="bio-image" src="bio.jpg" alt="Robert De Niro">
+            <p>One of the greatest actors of all time, Robert De Niro was born on August 17, 1943 in Manhattan, New York City, to
+            artists Virginia (Admiral) and Robert De Niro Sr. His paternal grandfather was of Italian descent, and his other
+            ancestry is Irish, English, Dutch, German, and French.</p>
+            <p>He was trained at the Stella Adler Conservatory and the American
+            Workshop. De Niro first gained fame for his role in Bang the Drum Slowly (1973), but he gained his reputation as a
+            volatile actor in Mean Streets (1973), which was his first film with director Martin Scorsese.</p>
+            <p>He received an Academy
+            Award for Best Supporting Actor for his role in The Godfather Part II (1974) and received Academy Award nominations for
+            best actor in Taxi Driver (1976), The Deer Hunter (1978) and Cape Fear (1991). He received the Academy Award for Best
+            Actor for his role as Jake LaMotta in Raging Bull (1980).
+            </p>
+        </section>
+        <section id="timeline">
+            <div id="timeline-container">
+                <h2>Timeline</h2>
+                <div id="timeline-grid">
+                    <div class="grid-item">
+                            <h3>1943</h3>
+                            <p>Robert Anthony De Niro Jr.was born in the Manhattan borough of New York City on August 17, 1943, the only child
+                            of painters Virginia Admiral and Robert De Niro Sr. His father was of Irish and Italian descent, while his mother
+                            had Dutch, English, French, and German ancestry.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>1973</h3>
+                        <p>In 1973, De Niro began collaborating with Martin Scorsese when he appeared in the crime film Mean Streets (1973),
+                        co-starring Harvey Keitel. Although De Niro was offered a choice of roles, Scorsese wanted De Niro to play "Johnny
+                        Boy" Civello, a small time criminal working his way up into a local mob.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>1995</h3>
+                        <p>Casino (1995) marked De Niro's return to the crime genre with Scorsese in their eighth collaboration. Co-starring Sharon
+                        Stone and Joe Pesci, the film is based on the book Casino: Love and Honor in Las Vegas by Nicholas Pileggi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="top-movies">
+            <h2>Top Movies</h2>
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.imdb.com/title/tt0071562/" target="_blank" rel="noopener noreferrer"><img
+                            src="the-godfather-2.jpg" alt="The Godfather 2 poster"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.imdb.com/title/tt0099685/" target="_blank" rel="noopener noreferrer"><img
+                            src="goodfellas.jpg" alt="Goodfellas poster"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.imdb.com/title/tt0113277/" target="_blank" rel="noopener noreferrer"><img
+                            src="heat.jpg" alt="Heat poster"></a>
+                </div>
+                <div class="column">
+                    <a href="https://www.imdb.com/title/tt0081398/" target="_blank" rel="noopener noreferrer"><img
+                            src="raging-bull.jpg" alt="Raging Bull poster"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Turn the navbar's background black when scrolling -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+        });
+    </script>
+</body>
+</html>
